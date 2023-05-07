@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xml declaration include attributes version number and encoding scheme used for document-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--SGML DOCTYPE command that specifies SGML document type definition and xhtml 1.1 standard-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--html element that includes an attribute,xmlns,that specifies xhtml namespace-->
+
+<head>
+<!--Defines the portion of document that contains formatting information(information about document rather than the content)-->
+
+<title>CNN NEWS</title>
+<!--Used to indicate title of Webpage-->
+
+
+<script src="http://www.google.com/jsapi/?key=ABQIAAAAK_GKA8Oz7TsnZwAqkMOLFBSJ5qBkngbYM3DN8sv7BfNjk0qNDBS6k3QZ71CdF4hu5MBfK69wIIjJww"
+type="text/javascript"></script>
+<!--To embeed the Javascript indirectly in an XHTML document,src is used along with API key and its MIME type is text/javascript-->
+
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+type="text/javascript"></script> 
+<!--To embeed the Javascript indirectly in an XHTML document,src is used and its MIME type is text/javascript-->
+ 
+<link rel="stylesheet" type="text/css" href="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css"/>
+<!--Specifies an external style sheet i.e, rel attribute specify the relationship of linked to document in which the link appears and its MIME type is text/css and href specify URL of stylesheet document-->
+    
+   
+
+<script type="text/javascript">
+
+<!--function used to load cnn news asynchronously-->
+function load()
+
+{
+	<!--loads cnn news-->
+	var feed="http://rss.cnn.com/rss/edition_sport.rss";
+
+	var options = {
+			<!--to display 5 results-->
+               		numResults : 5
+		      }
+	new GFdynamicFeedControl(feed, "feedControl", options);
+
+}
+<!--Load the feeds API and set the onload callback-->
+    	google.load("feeds", "1");
+    	google.setOnLoadCallback(load);
+
+</script>
+
+</head> 
+
+<!--Defines the portion or content of document that includes tags and attributes-->
+<body>
+
+<!--To specify the style or presentation details for a section or division o a document-->
+<div id="body">
+
+<!--The Following div element will end up holding the actual feed control-->
+<div id="feedControl">Loading...</div>
+
+<!--Specifies the end of division tag-->
+</div>
+
+<!--Specifies the end of body tag-->
+</body>
+
+<!--Specifies the end of html document-->
+</html>
+
