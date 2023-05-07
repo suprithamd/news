@@ -6,7 +6,7 @@ http://en.wikipedia.org/wiki/rss
 http://en.wikipedia.org/wiki/Ajax_(programming)
 
 2.DEVELOPMENT TOOLS
-Linus OS
+Linux OS
 apache web server
 mozilla firefox browser
 Text editor
