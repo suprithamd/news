@@ -1,4 +1,6 @@
- 1.RESOURCES: 
+web application to select Google News or CNN and displays 5 latest news from the selected news source in real-time asynchronously at every user-specified interval of time using Google AJAX Feed API.
+
+1.RESOURCES: 
 http://developers.google.com/feed/
 http://en.wikipedia.org/wiki/rss
 http://en.wikipedia.org/wiki/Ajax_(programming)
